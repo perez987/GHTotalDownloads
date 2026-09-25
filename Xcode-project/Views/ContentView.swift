@@ -73,7 +73,7 @@ struct ContentView: View {
                     .frame(minWidth: 120)
             }
             .buttonStyle(.borderedProminent)
-            .controlSize(.large)
+            .controlSize(.extraLarge)
             .disabled(viewModel.isRunning || settings.trimmedUsername().isEmpty)
 
             Button {
@@ -82,7 +82,7 @@ struct ContentView: View {
                 Label(settings.text(.cancel), systemImage: "stop.fill")
             }
             .buttonStyle(.bordered)
-            .controlSize(.large)
+            .controlSize(.extraLarge)
             .disabled(viewModel.isRunning == false)
 
             Button {
@@ -91,7 +91,7 @@ struct ContentView: View {
                 Label(settings.text(.copyOutput), systemImage: "doc.on.doc")
             }
             .buttonStyle(.bordered)
-            .controlSize(.large)
+            .controlSize(.extraLarge)
             .disabled(viewModel.outputLines.isEmpty)
 
             Button {
@@ -100,19 +100,19 @@ struct ContentView: View {
                 Label(settings.text(.clear), systemImage: "trash")
             }
             .buttonStyle(.bordered)
-            .controlSize(.large)
+            .controlSize(.extraLarge)
             .disabled(viewModel.outputLines.isEmpty)
 
             Spacer()
 
-            LanguageSelectorButton(minWidth: 110)
+            LanguageSelectorButton(minWidth: 100)
 
             SettingsLink {
                 Label(settings.text(.settings), systemImage: "gearshape")
-                    .frame(minWidth: 110)
+                    .frame(minWidth: 132)
             }
             .buttonStyle(.bordered)
-            .controlSize(.large)
+            .controlSize(.extraLarge)
         }
     }
 

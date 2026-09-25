@@ -8,7 +8,7 @@ struct GHTotalDownloadsApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(settings)
-                .frame(minWidth: 760, idealWidth: 760, maxWidth: 760, minHeight: 680, idealHeight: 680, maxHeight: 680)
+                .frame(minWidth: 820, idealWidth: 820, maxWidth: 820, minHeight: 680, idealHeight: 680, maxHeight: 680)
         }
         .defaultSize(width: 820, height: 680)
         .windowResizability(.contentSize)
